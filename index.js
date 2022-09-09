@@ -1,6 +1,6 @@
 form.addEventListener("submit", function submitFunction(e) {
   e.preventDefault();
-  var tableBody = document.getElementById("tablebody");
+  var tableBody = document.getElementsByTagName("tbody")[0];
   const row = document.createElement("tr");
   var name = document.querySelectorAll("input")[0].value;
   var family = document.querySelectorAll("input")[1].value;
